@@ -6,7 +6,7 @@ CODE:
 
 R code saved in: NewPhy_Code.R
 
-*DATA:*
+DATA:
 
 
 SNP data can be found at: https://doi.org/10.5061/dryad.56j8vq8 
