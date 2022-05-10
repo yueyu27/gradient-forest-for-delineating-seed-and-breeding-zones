@@ -48,7 +48,7 @@
 # Load SNP data (Full/ Candidate/ Neutral SNP sets in genotype)
 # Lodgepole pine SNPs data are archived at https://doi.org/10.5061/dryad.56j8vq8
 # allSnp.csv is the Lodgepole pine SNPs found in https://doi.org/10.5061/dryad.56j8vq8
-all <- read.csv('allSnp.csv');head(all);dim(all) 
+all <- read.csv('<SNP file name here>');head(all);dim(all) 
 #Keep SNPs with allele frequency > 5% and saved as variable c4
 
 #-------------------------
@@ -56,7 +56,7 @@ all <- read.csv('allSnp.csv');head(all);dim(all)
 #-------------------------
 #climate data obtained from ClimateNA for 20 climate variables
 getwd()
-climate0 <- read.csv("originalData/output_climate1.csv");head(climate0);dim(climate0)
+climate0 <- read.csv("output_climate1.csv");head(climate0);dim(climate0)
 
 
 #-------------------------
@@ -143,13 +143,13 @@ library(sf)
 
 #Load outlines
 #Lpine outline
-range <- readOGR("C:/Users/hellooo/Documents/LpineRange/pc_range.shp")
+range <- readOGR("pc_range/pc_range.shp")
 plot(range)
 range2 <- spTransform(range, CRS("+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +datum=NAD83
 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0"))
 plot(range2) #distribution outline with projection
 #British columbia and Alberta (ABBC) outline
-outline <- readOGR("C:/Users/hellooo/Documents/bcab800/ABBC_outline.shp")
+outline <- readOGR("bcab800/ABBC_outline.shp")
 plot(outline) # ABBC outline with NO projection
 outlineABBC <- spTransform(outline, CRS("+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000 +y_0=0 +datum=NAD83
 +units=m +no_defs +ellps=GRS80 +towgs84=0,0,0"))
@@ -174,7 +174,7 @@ if(names(r)=='MAT'|names(r)=='MWMT'|names(r)=='MCMT'|names(r)=='TD'|names(r)=='E
 varList <- c("MAT", "MWMT", "MCMT", "TD", "MAP", "MSP", "AHM", "SHM", "DD_0", "DD5", "NFFD", "FFP", 
             "bFFP", "eFFP","PAS", "EMT", "EXT", "Eref", "CMD", "RH") # For climate variables descriptions, see Table 1.
 
-wd <- 'C:/Users/hellooo/Documents/800m_abbc/Normal_1961_1990Y'
+wd <- 'Normal_1961_1990Y'
 
 #Load climate data using the function
 stk_abbc2 <- toStk3(wd,varList,rType='asc',vConvert=T)
