@@ -175,6 +175,7 @@ varList <- c("MAT", "MWMT", "MCMT", "TD", "MAP", "MSP", "AHM", "SHM", "DD_0", "D
             "bFFP", "eFFP","PAS", "EMT", "EXT", "Eref", "CMD", "RH") # For climate variables descriptions, see Table 1.
 
 wd <- 'Normal_1961_1990Y'
+#you could easily generate this climate file in .asc format in climateNA (see: https://climatena.ca)
 
 #Load climate data using the function
 stk_abbc2 <- toStk3(wd,varList,rType='asc',vConvert=T)
