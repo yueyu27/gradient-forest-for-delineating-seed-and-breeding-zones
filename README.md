@@ -17,7 +17,7 @@ Climate data for model building: output_climate1.csv
 
 Climate data for model predicting (800 meter resolution): Normal_1961_1990Y file (but this file is too large to upload in Github, if you need this file please contact me: yue.yu@ubc.ca)
 
-Shapefiles:
+SHAPEFILES:
 
 
 British columbia and Alberta (ABBC) outline: bcab800/ABBC_outline.shp
