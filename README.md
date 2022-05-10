@@ -15,7 +15,9 @@ SNP data can be found at: https://doi.org/10.5061/dryad.56j8vq8
 Climate data for model building: output_climate1.csv
 
 
-Climate data for model predicting (800 meter resolution): Normal_1961_1990Y file (but this file is too large to upload in Github, if you need this file please contact me: yue.yu@ubc.ca)
+Climate data for model predicting (800mx800m resolution): Normal_1961_1990Y file 
+
+(This file is too large to upload here in Github, if you need this file please contact me: yue.yu@ubc.ca, I'm happy to send it to you through email or you could just directly generate this in the climateNA software: see https://climatena.ca)
 
 SHAPEFILES:
 
