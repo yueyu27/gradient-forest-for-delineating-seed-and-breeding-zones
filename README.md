@@ -12,7 +12,7 @@ DATA:
 SNP data can be found at: https://doi.org/10.5061/dryad.56j8vq8 
 
 
-Climate data for model building: output_climate1.csv (use the first 281 rows/locations)
+Climate data for model building: output_climate1.csv
 
 
 Climate data for model predicting (800mx800m resolution): Normal_1961_1990Y file 
